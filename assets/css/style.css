@@ -112,7 +112,7 @@ a:hover {
 
     /* Content Wrapper */
 
-    .content-wrapper {
+    #content-wrapper {
         padding-left: var(--sidebar-width);
 }
 
