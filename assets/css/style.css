@@ -73,6 +73,47 @@ a:hover {
 
 }
 
+.col-md-4.d-flex {
+    display: flex;
+    flex: 1 1 auto;
+  }
+
+  .row.gy-4 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .service {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  .iconbox {
+    display: flex;
+    font-size: 3rem; 
+    margin-bottom: 1rem;
+  }
+  
+  .service h4 {
+    margin-top: 0;
+  }
+  
+  .service p {
+    flex-grow: 1;
+  }
+  
+  .service a {
+    align-self: flex-start;
+    margin-top: auto;
+  }
+
+  .d-flex.flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+
 /* Navigation */
 
 .navbar {
@@ -112,7 +153,7 @@ a:hover {
 
     /* Content Wrapper */
 
-    .content-wrapper {
+    #content-wrapper {
         padding-left: var(--sidebar-width);
 }
 
@@ -157,16 +198,38 @@ a:hover {
 }
 
 /* Custom Card */
-.card-custom .card-custom-image {
-    overflow: hidden;
-
+.card-custom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
-.card-custom .card-custom-image img {
-    transition: all 0.4s ease;
-
+.card-custom-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
 }
 
-.card-custom:hover .card-custom-image img {
-    transform: scale(1.05);
+.card-custom-content {
+    flex-grow: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.card-custom h4 {
+    margin-top: 0;
+}
+
+.card-custom p {
+    flex-grow: 1;
+}
+
+.card-custom a {
+    align-self: flex-start;
+}
+
+
+  
